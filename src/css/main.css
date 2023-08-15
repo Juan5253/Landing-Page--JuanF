@@ -242,5 +242,29 @@ body {
     100%{
         transform: translateY(0px); 
     }
-
+}
+/* MODAL */
+.modal {
+    /*display: grid;*/ /* Para el manejo adecuado del modal, el display deberia ser manejado por las clases de estado (hidden-visible)*/
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    
+    z-index: 4;
+}
+.modal-content{
+    background-color: aliceblue;
+    width: 50%;
+    height: 50%;
+}
+.modal-content--close{
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display: grid;
 }
