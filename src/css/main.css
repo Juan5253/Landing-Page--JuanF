@@ -84,15 +84,17 @@ body {
 }
 /* NAVBAR */
 .navbar{
-    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color1);
     grid-area: nav;
 }
 .navbar-content{
     display: flex;
-    align-items: center;
     width: 100%;
     padding: 0 0 0 80px;
-
+    align-items: center;
     animation: 2s navbar 0.8s ease-in-out; /* La animación transcurre luego de dos segundos*/
 }
 .navbar-content ul{
@@ -104,10 +106,44 @@ body {
 }
 .navbar-content ul li a{
     text-decoration: none;
+    color: white;
 }
 @keyframes navbar {
     0%{
         transform: translateY(-200px); /*Se desplaza verticalmente ocultandose*/
+    }
+    100%{
+        transform: translateY(0px);  /*Vuelve a su posicion vertical original*/
+    }
+}
+/* MAIN CONTENT */
+.main-content{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+
+    animation: 2s main-content 0.8s ease-in-out;
+}
+.main-content p:first-child{
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0 0 0 60px;
+}
+.main-content h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+.main-content p:last-child{
+    font-weight: 100;
+    width: 80%;
+    margin: 10px 0 0 40px
+}
+@keyframes main-content {
+    0%{
+        transform: translateY(-600px); /*Se desplaza verticalmente ocultandose*/
     }
     100%{
         transform: translateY(0px);  /*Vuelve a su posicion vertical original*/
