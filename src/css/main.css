@@ -82,3 +82,34 @@ body {
         transform: scale(1);
     }
 }
+/* NAVBAR */
+.navbar{
+    background: blue;
+    grid-area: nav;
+}
+.navbar-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 0 80px;
+
+    animation: 2s navbar 0.8s ease-in-out; /* La animación transcurre luego de dos segundos*/
+}
+.navbar-content ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    width: 450px;
+}
+.navbar-content ul li a{
+    text-decoration: none;
+}
+@keyframes navbar {
+    0%{
+        transform: translateY(-200px); /*Se desplaza verticalmente ocultandose*/
+    }
+    100%{
+        transform: translateY(0px);  /*Vuelve a su posicion vertical original*/
+    }
+}
