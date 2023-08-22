@@ -200,6 +200,8 @@ body {
     animation-fill-mode: forwards;
 }
 .footer h3{
+    font-size:x-large;
+    font-family: var(--pixelfont);
     align-self: flex-end;
     color: #d9d468;
 }
@@ -290,10 +292,10 @@ body {
     grid-area: textd;
     text-align: justify;
 }
-.modal-content--close{
+.modal-content--close-1, .modal-content--close-2, .modal-content--close-3{
     cursor: pointer;
     position:absolute;
-    left: 100px;
+    left: 200px;
 }
 /* CAROUSEL */
 .modal-content--slider{
