@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/main.css">
+    <script src="./src/js/main.js"></script>
     <title>JuanF Developer</title>
 </head>
 
@@ -19,23 +23,25 @@
         <!-- Modal-->
         <section class="modal hidden">
             <div class="modal-content">
+                <h1> About me! </h1>
                 <img class="modal-content--close" src="./src/images/icons8-eliminar-30.png" alt="">
-                <div class="modal-content--slider">
-                    <input type="radio" name="slider-1" id="radio-1" checked>
-                    <input type="radio" name="slider-1" id="radio-2">
-                    <input type="radio" name="slider-1" id="radio-3">
-
-                    <div class="cards">
-                        <label for="radio-1" id="card-1" class="card">
-                            <img src="" alt="">
-                        </label>
-                        <label for="radio-2" id="card-2" class="card">
-                            <img src="" alt="">
-                        </label>
-                        <label for="radio-3" id="card-3" class="card">
-                            <img src="" alt="">
-                        </label>
-                    </div>
+                <div class="modal-content-text">
+                    <span>I'm Juan Sebastian Fonseca, i'm 25 years old and i'm a civil engineering student at the Nueva Granada Military University. With experience in the design and development of software/web applications, I have advanced technical skills and a focus on customer and end-user satisfaction.</span>
+                    <br>
+                    <br>
+                    <span> I am characterized by the ability to remain calm under pressure and tackle complex challenges with determination. my strong work ethic and focus on constant improvement have led me to obtain outstanding results in my academic evaluations and engineering projects. I'm always looking for ways to exceed expectations and dig deeper into the topics that interest him. My proactive attitude and willingness to collaborate make me a valuable member of group projects and study teams. I am respectful of the opinions of my peers and I foster a cooperative learning environment. My organized nature manifests itself in the way I plan and carry out my research and projects, often resulting in well-informed and innovative solutions.</span>
+                    <br>
+                    <br>
+                    <span> The synergy between reading and math is evident in his unique approach to problem solving. He finds literary inspiration in clever mathematical solutions and uses mathematical logic to analyze and unravel the complex plots of literary works.</span>
+                    <br>
+                    <br>
+                    <span>Music is his escape route and his source of inspiration. The melodies and rhythms speak to you in a way that words cannot express. He explores diverse genres, from classical music to experimental jazz, and finds similarities between the musical structures and mathematical patterns he studies. Playing stringed instruments, music allows him to blend his love of technology and art into a single creative expression.</span>
+                    <br>
+                    <br>
+                    <span> When it comes to technology, Juan Sebastian is aware of the latest innovations and advances, and his enthusiasm for technology goes beyond the mere novelty. He delights in taking devices apart to understand their inner workings and is always eager to learn new programming languages ​​and development techniques. His love for technology is not limited to superficiality; he seeks to understand how he can shape and transform the world around him.</span>
+                </div>
+                <div class="modal-content-img">
+                    <img src="./src/images/aboutme.jpg" alt="about me photo">
                 </div>
             </div>
         </section>
@@ -43,56 +49,54 @@
             <!-- Nav Bar -->
             <nav class="navbar"> 
                 <div class="navbar-content">
-                    <img src="" alt="">
-                    <ul>
-                        <li><a href="./src/pages/aboutme.html"> About Me </a></li>
-                        <li><a href="./src/pages/experience.html"> My Work Experience </a></li>
-                        <li><a href="./src/pages/hobbies.html"> Hobbies and Others</a></li>
-                        <li><a href=""> Contact </a></li>
-                    </ul>
+                    <div class="navbar-content-card">
+                        <h4> Instagram </h4>
+                        <img src="./src/assets/instagram.svg" alt="">
+                    </div>
+                    <div class="navbar-content-card">
+                        <h4> GitHub </h4>
+                        <img src="./src/assets/github.svg" alt="">
+                    </div>
                 </div>
             </nav>
             <section class="main-content">
                 <p>Hey, my name is</p>
                 <h1>JUAN SEBASTIAN FONSECA</h1>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptates ratione corporis
-                    at.
-                    Voluptatum excepturi aperiam veritatis nesciunt illo ut assumenda libero repellendus consectetur
-                    consequatur, reiciendis quibusdam dolore, ad deserunt?</p>
+                <p> A passionate explorer and a tireless creator
+                    transcends conventional boundaries, merging two seemingly disparate worlds into a symphony of innovation and creativity. His path is marked by a constant desire to learn, create and make a significant impact in the world.</p>
             </section>
             <section class="side-content">
-                <div></div>
-                <p>Juan</p>
-                <img src="./src/images/super-man.png" alt="aside image">
+                <div class="side-background"></div>
+                <section class="profilecard">
+                    <div class="profilecard-content">
+                        <img class="profilecard-content-photo" src="./src/images" alt="">
+                        <div> 
+                            <a href=""><img src="" alt=""></a>
+                            <span> +57 300 6070 864</span>
+                        </div>
+                        <div>
+                            <a href=""><img src="" alt=""></a>
+                            <span> juan.sebastian5253@gmail.com</span>
+                        </div>
+                    </div>
+                </section>
             </section>
             <section class="footer">
                 <div id="button1">
-                    <img src="./src/images/spiderman.png" alt="">
+                    <img src="./src/assets/aboutme.svg" alt="">
+                    <h3> About Me! </h3>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src="./src/assets/studies.svg" alt="">
+                    <h3> Educational Background </h3>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src="./src/assets/workExperience.svg" alt="">
+                    <h3> Work Experience </h3>
                 </div>
             </section>
         </section>
     </section>
-    <script>
-        const modal = document.querySelector('.modal')
-        const button1 = document.querySelector('#button1')
-        const closeButton = document.querySelector('.modal-content--close')
-
-        button1.addEventListener('click', () => {
-            modal.classList.remove('hidden')
-            modal.classList.add('visible')
-        })
-
-        closeButton.addEventListener('click', () => {
-            modal.classList.add('hidden')
-            modal.classList.remove('visible')
-        })
-    </script>
 </body>
 
 </html>
